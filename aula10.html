@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso Bootstrap3 - Devmedia</title>
+        
+        <!-- define a viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta charset="utf-8">
+        
+        <!-- adicionar CSS Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        
+        <!-- css personalizado -->
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    
+                    <form class="form-horizontal">
+                        
+                        <div class="form-group">
+                            <label for="nome" class="col-xs-2 control-label">Nome completo:</label>
+                            <div class="col-xs-10">
+                                <input type="text" class="form-control" id="nome" placeholder="Digite seu completo...">
+                            </div>    
+                        </div>
+                        
+                        <!--
+                        <div class="form-group">
+                            <label for="tipo" class="col-xs-2 control-label">Tipo:</label>
+                            <div class="col-xs-10">
+                                <select id="tipo" class="form-control">
+                                    <option>Pessoa física</option>
+                                    <option>Pessoa juridica</option>
+                                </select>
+                            </div>
+                        </div>
+                        -->
+                         <div class="form-group">
+                            <label for="tipo" class="col-xs-2 control-label">Selecione:</label>
+                            <div class="col-xs-10">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="id1" value="1"> 1
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="id2" value="2"> 2
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="id3" value="3"> 3
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-xs-2 control-label">Seu email:</label>
+                            <div  class="col-xs-10">
+                                <p class="form-control-static">atendimento@webb.house</p>
+                            </div>
+                        </div>  
+                        
+                        <!-- Adicionar classes de validação via jquery -->
+                        
+                        <div class="form-group has-success has-feedback">
+                            <label for="nome" class="col-xs-2 control-label">(success)Nome completo:</label>
+                            <div class="col-xs-10">
+                                <input type="text" class="form-control" id="nome">
+                                
+                                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                            </div>    
+                        </div>
+                        
+                        <!-- Adicionar classes de validação via jquery -->
+                        <div class="form-group has-warning  has-feedback">
+                            <label for="nome" class="col-xs-2 control-label">(warning)Nome completo:</label>
+                            <div class="col-xs-10">
+                                <input type="text" class="form-control" id="nome">
+                            </div>    
+                            
+                            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                        </div>
+                        
+                        <!-- Adicionar classes de validação via jquery -->
+                        <div class="form-group has-error  has-feedback">
+                            <label for="nome" class="col-xs-2 control-label">(error)Nome completo:</label>
+                            <div class="col-xs-10">
+                                <input type="text" class="form-control" id="nome">
+                                
+                                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                            </div>    
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="nome" class="col-xs-2 control-label">CPF:</label>
+                            <div class="col-xs-10">
+                                <input type="text" class="form-control" id="nome" placeholder="Digite seu cpf...">
+                                <span>Texto de ajuda para o campo 11.111.111-33</span>
+                            </div>    
+                        </div>
+                        
+                        <div class="form-group form-group-lg">
+                            <label for="nome" class="col-xs-2 control-label">Form-group-lg:</label>
+                            <div class="col-xs-10">
+                                <input type="text" class="form-control" id="nome">
+                                
+                            </div>    
+                        </div>
+                        
+                         <div class="form-group form-group-sm">
+                            <label for="nome" class="col-xs-2 control-label">Form-group-sm:</label>
+                            <div class="col-xs-10">
+                                <input type="text" class="form-control" id="nome">
+                                
+                            </div>    
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-xs-offset-2 col-xs-10">
+                                <button type="submit" class="btn btn-default">Enviar formulário</button>
+                            </div>
+                        </div>   
+            
+                    
+                    </form>
+                   
+                </div>
+            </div>
+        </div>
+        
+        
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
