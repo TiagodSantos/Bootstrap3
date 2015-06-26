@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso Bootstrap3 - Devmedia</title>
+        
+        <!-- define a viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta charset="utf-8">
+        
+        <!-- adicionar CSS Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+        
+        <!-- css personalizado -->
+        <link href="css/estilo.css" rel="stylesheet" media="all">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                <hr /><hr />    
+                <div class="page-header">
+                    <h1>TOOLTIPS</h1>
+                </div>    
+   <!-- Tomar cuidado com tootips, pois eles não tem utilidade para mobile (já que não temos um mouse p/ posicionar em cima do elemento) -->                        <button type="button" class="btn btn-default ttp" date-toggle="tooltip" data-placement="left" title="Tooltip Left">Tooltip 1 - Left</button>
+                 
+                <button type="button" class="btn btn-default ttp" date-toggle="tooltip" data-placement="top" title="Tooltip Top">Tooltip 1 - top</button>
+                    
+                <button type="button" class="btn btn-default ttp" date-toggle="tooltip" data-placement="right" title="Tooltip Right">Tooltip 1 - right</button>
+                    
+                <button type="button" class="btn btn-default ttp" date-toggle="tooltip" data-placement="bottom" >Tooltip 1 - bottom</button>    
+                    
+                </div>
+            </div>
+        </div>    
+        
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                <hr /><hr />    
+                <div class="page-header">
+                    <h1>POPOVERS</h1>
+                </div>    
+                
+                <button type="button" class="btn btn-default ppv" date-toggle="popover" data-placement="left" data-content="Conteudo do Popover" data-container="body">Popover 1 - Left</button>
+                 
+                <button type="button" class="btn btn-default ppv" date-toggle="popover" data-placement="top" data-content="Conteudo do Popover" data-container="body">Popover 1 - top</button>
+                    
+                <button type="button" class="btn btn-default ppv" date-toggle="popover" data-placement="right" data-content="Conteudo do Popover" data-container="body">Popover 1 - right</button>
+                    
+                <button type="button" class="btn btn-default ppv" date-toggle="popover" data-placement="bottom" data-content="Conteudo do Popover" data-container="body" title="Popover com title">Popover 1 - bottom</button>    
+                    
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

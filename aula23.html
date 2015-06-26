@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso Bootstrap3 - Devmedia</title>
+        
+        <!-- define a viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta charset="utf-8">
+        
+        <!-- adicionar CSS Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+        
+        <!-- css personalizado -->
+        <link href="css/estilo.css" rel="stylesheet" media="all">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header">
+                        <h1>Alerts<small> Elementos alerts</small></h1>
+                    </div>
+
+                    <div class="alert alert-success">Formulário enviado com sucesso!</div>
+                    <div class="alert alert-warning">Cuidado ao preencher o formulário</div>
+                    <div class="alert alert-info">Preencha todos os campos do formulário</div>
+                    <div class="alert alert-danger">Você não preencher os campos corretamente</div>
+                    
+                    
+                    <!-- ALERT COM POSSIBILIDADE DE FECHAMENTO -->
+                    <div class="alert alert-danger alert-dismissible">
+                        
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        
+                        <strong>Você</strong> não preencher os campos <a href="#" class="alert-link">corretamente</a>!
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    
+                    <div class="page-header">
+                        <h1>Progress Bar <small>Elementos progress bar</small></h1>
+                    </div>
+                    
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span>60% completo....</span>
+                         </div>
+                    </div>
+                    
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                            <span>70% completo (success)....</span>
+                         </div>
+                    </div>
+                    
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                            <span>75% completo (info)....</span>
+                         </div>
+                    </div>
+                    
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                            <span>45% completo (warning)....</span>
+                         </div>
+                    </div>
+                    
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 52%">
+                            <span>52% completo (danger)....</span>
+                         </div>
+                    </div>
+                    
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 58%">
+                            <span>58% completo (danger c/ striped)....</span>
+                         </div>
+                    </div>
+                    
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 58%">
+                            <span>58% completo (danger c/ striped active (simulando andamento))....</span>
+                         </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
